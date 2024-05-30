@@ -808,6 +808,9 @@ app.get("/api/test", (req, res) => {
     }
 });
 
+let Change = 0;
+
+
 
   app.post("/ussd", function (req, res) {
     menu.run(req.body, (ussdResult) => {
